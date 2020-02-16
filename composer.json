@@ -1,0 +1,13 @@
+{
+    "name": "casino25/php-api-client",
+    "homepage": "https://github.com/casino25/php-api-client",
+    "require": {
+        "php": ">=5.3.0",
+        "fguillot/json-rpc": "1.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "casino25\\api\\client\\": "src"
+        }
+    }
+}
