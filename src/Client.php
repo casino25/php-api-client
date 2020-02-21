@@ -71,21 +71,6 @@ class Client
 	}
 
 	/**
-	 * Creates a bank group.
-	 *
-	 * @param array $bankGroup
-	 * @return array
-	 */
-	public function createBankGroup($bankGroup)
-	{
-		Helper::requiredParam($bankGroup, 'Id', ParamType::STRING);
-		Helper::requiredParam($bankGroup, 'Currency', ParamType::STRING);
-		Helper::optionalParam($bankGroup, 'DefaultBankValue', ParamType::INTEGER);
-
-		return $this->execute('BankGroup.Create', $bankGroup);
-	}
-
-	/**
 	 * Creates or updates a bank group (aka "upsert").
 	 *
 	 * @param array $bankGroup
@@ -112,21 +97,6 @@ class Client
 		Helper::requiredParam($bankGroup, 'SettingsTemplateId', ParamType::STRING);
 
 		return $this->execute('BankGroup.ApplySettingsTemplate', $bankGroup);
-	}
-
-	/**
-	 * Creates a player.
-	 *
-	 * @param array $player
-	 * @return array
-	 */
-	public function createPlayer($player)
-	{
-		Helper::requiredParam($player, 'Id', ParamType::STRING);
-		Helper::optionalParam($player, 'Nick', ParamType::STRING);
-		Helper::requiredParam($player, 'BankGroupId', ParamType::STRING);
-
-		return $this->execute('Player.Create', $player);
 	}
 
 	/**
