@@ -60,18 +60,18 @@ class Client
 		return $this->getClient()->execute($method, $params);
 	}
 
-    /**
-     * Returns a list of available games.
-     *
-     * @param array $params
-     * @return array
-     */
-    public function listGames($params)
-    {
-        Helper::optionalParam($params, 'BankGroupId', ParamType::STRING);
+	/**
+	 * Returns a list of available games.
+	 *
+	 * @param array $params
+	 * @return array
+	 */
+	public function listGames($params)
+	{
+		Helper::optionalParam($params, 'BankGroupId', ParamType::STRING);
 
-        return $this->execute('Game.List', $params);
-    }
+		return $this->execute('Game.List', $params);
+	}
 
 	/**
 	 * Creates or updates a bank group (aka "upsert").
