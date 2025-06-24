@@ -248,6 +248,16 @@ class Client
 	}
 
 	/**
+	 * Get a list of unprocessed `collectBonusReward` transactions that are less than 24 hours old.
+	 *
+	 * @return array
+	 */
+	public function getPendingBonusTransactions()
+	{
+		return $this->execute('Bonus.GetPendingBonusTransactions');
+	}
+
+	/**
 	 * Lists defined bonuses.
 	 *
 	 * @deprecated Wallet API is no longer mantained. Use Seamless API instead.
