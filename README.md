@@ -5,7 +5,7 @@ PHP API Client for Casino v2.5
 ## Requirements
 
 > - PHP 5.6.3 or higher
-> - The **phpseclib3** library.
+> - The **phpseclib** library.
 >   - (required for secure 64-bit nonce generation used by the signature mechanism)
 > - OpenSSL and cURL extensions (required by json-rpc client)
 

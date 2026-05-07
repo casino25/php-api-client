@@ -5,7 +5,7 @@ namespace Unit\Signature;
 use casino25\api\client\Signature\SequentialNonce;
 use PHPUnit\Framework\TestCase;
 
-class SequentialNonceGeneratorTest extends TestCase
+class SequentialNonceTest extends TestCase
 {
 	public function testIncrementsFromGivenIntStart()
 	{

@@ -2,7 +2,7 @@
 
 namespace casino25\api\client\Signature;
 
-use phpseclib3\Math\BigInteger;
+use phpseclib\Math\BigInteger;
 
 /**
  * Class SequentialNonce
